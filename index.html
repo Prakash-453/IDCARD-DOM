@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID-CARD</title>
+</head>
+<body>
+    <script>
+        let div1 = document.createElement('div');
+        document.body.appendChild(div1);
+        div1.style.border = '2px solid orange';
+        div1.style.height = '470px';
+        div1.style.width = '300px';
+        div1.style.borderRadius = '30px'
+        div1.style.marginLeft = '450px'
+        div1.style.marginTop = '100px'
+        div1.style.backgroundColor = 'aqua'
+
+        let h1 = document.createElement('h1')
+        h1.innerHTML = 'ID CARD';
+        div1.appendChild(h1)
+        h1.style.textAlign = 'center'
+
+        let img1 = document.createElement('img')
+        img1.setAttribute('src', './Prakash.jpg')
+        div1.appendChild(img1)
+        img1.style.height = '170px';
+        img1.style.width = '130px'
+        img1.style.marginLeft = '84px'
+        img1.style.borderRadius = '40px'
+
+        let h2 = document.createElement('h2')
+        h2.innerHTML = "Name : <span style ='color:red'>K.Prakash</span>"
+        div1.appendChild(h2)
+        h2.style.marginLeft = '70px'
+
+        let h3 = document.createElement('h2')
+        h3.innerHTML = 'Batch : <span style ="color:red"> 14R</span>'
+        div1.appendChild(h3)
+        h3.style.marginLeft = '70px'
+
+        let h4 = document.createElement('h2')
+        h4.innerHTML = 'Phone No : <span style ="color:red"> 9876543210</span>'
+        div1.appendChild(h4)
+        h4.style.marginLeft = '40px'
+    </script>
+</body>
+</html>
